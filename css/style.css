@@ -1,26 +1,554 @@
 /* open-sans-regular - latin */
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/open-sans-v18-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-600 - latin */
+@font-face{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/open-sans-v18-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/open-sans-v18-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/open-sans-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* open-sans-600 - latin */
-  @font-face {
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html{
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+a {
+    outline: none !important;
+}
+
+body{
+    font-family: "Open sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    background: #02160b;
+}
+
+.header_logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+    transition: all 1s;
+}
+
+
+.header_logo-text{
+    padding-left: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.header_logo-link{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    transition: 0.5s ease;
+}
+
+.header_logo-link:hover{
+    color: #CD6326;
+}
+
+.deer_horns {
+    transition: 1s ease;
+}
+
+.deer_horns:hover {
+    transform: scale(1.2);
+}
+
+.deer_horns:active {
+    transform: scale(0.9);
+    opacity: .75;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 20px auto;
+    height: 100px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+   
+
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.nav_item{
+    padding-left: 62px;
+}
+
+
+.header_link{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 23px;
+    text-decoration: none;
+    color: #f7f7f7;
+
+}
+
+.search_item {
+    transition: 1s ease;
+}
+
+.search_item:hover {
+    transform: scale(1.3);
+}
+
+.nav_item .sign_in{
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+    box-sizing: border-box;
+    border: 2px solid #CD6326;
+    border-radius: 5px;
+    padding: 10px 23px;
+    width: 120px;
+    height: 50px;
+}
+
+.nav_item .sign_in:hover{
+    background: #CD6326;
+    color: #f7f7f7;
+    border-bottom: 2px solid #CD6326;
+}
+
+.nav_item .sign_in:active{
+    background: #8F5613;
+    color: #f7f7f7;
+    border-bottom: 2px solid #8F5613;
+    border:2px solid #8F5613;
+}
+
+
+.header_link:hover, .header_link:active{
+    color: #CD6326;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+}  
+
+
+.sign_in{
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+    color: #f7f7f7;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: none;
+    text-decoration: none;
+    border: 2px solid #CD6326;
+    padding: 10px 23px;
+    width: 120px;
+    height: 50px;
+}
+
+
+.fox {
+    height: 780px;
+    background: #02160b top url(../assets/img/fox.png) no-repeat;
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+.survival_article{
+    padding-top: 100px;
+}
+
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+    color: #CD6326;
+}
+
+h2{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    padding-top: 120px;
+    text-align: center;
+    color: #333333;
+}
+
+.article{
+    padding: 50px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    width: 274px;
+}
+
+.donate-btn{
+    /* margin-top: 50px; */
+    width: 160px;
+    height: 60px;
+    margin-bottom: 240px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+
+    background: #CD6326;
+    color: #F7F7F7;
+}
+
+.donate-btn:hover{
+    background-color: #E39128;
+}
+
+.donate-btn:active{
+    background-color: #8F5613;
+}
+/* second part - latest article */
+
+
+.breaking_news{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 20px;
+    color: #666666;
+}
+
+
+/* main grey color */
+
+.main{
+    background-color: #CCCCCC;
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin-top: 120px;
+}
+
+.left_arrow {
+    align-self: center;
+    transition: transform 0.3s ease-in;
+}
+
+.right_arrow {
+    align-self: center;
+    transition: transform 0.3s ease-in;
+}
+
+.left_arrow:hover {
+    cursor: pointer;
+    opacity: 0.75;
+    transform: scale(1.4);
+}
+
+.right_arrow:hover {
+    cursor: pointer;
+    opacity: 0.75;
+    transform: scale(1.4);
+}
+
+
+.cards {
+    width: 300px;
+    height: 360px;
+    margin: 10px;
+    position: relative;
+}
+.card_description-1 {
+    position: absolute;
+    vertical-align: center;
+    text-align: center;
+    top: 240px;
+    left: 60px;
+}
+
+.card_description {
+    position: absolute;
+    vertical-align: center;
+    text-align: center;
+    top: 240px;
+    left: 80px;
+}
+
+h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+.card-subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+
+.slide-1 {
+    background: url(../assets/img/deer.jpg);
+}
+
+.slide-2 {
+    background: url(../assets/img/squirrel.jpg);
+}
+
+.slide-3 {
+    background: url(../assets/img/bird.jpg);
+}
+
+.card_description {
+    position: absolute;
+    text-align: center;
+}
+
+
+h3 {
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 600;
-    src: local(''),
-         url('../fonts/open-sans-v18-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/open-sans-v18-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
 
-  html {
-      box-sizing: border-box;
-  }
+    margin-top: 240px;
+}
 
-  *, *::before, *::after {
-      box-sizing: inherit;
-  }
+.input_email {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+} 
+
+.get_email {
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    line-height: 27px;
+    color: #333333;
+    box-sizing: border-box;
+    outline: none;
+    width: 540px;
+    height: 60px;
+    padding: 0 15px;
+    border: 1px #666666 solid;
+    background: #cccccc;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    transition: border 0.2s ease-in;
+
+    margin-bottom: 240px;
+}
+
+.get_email:hover, .get_email:active {
+    border: 1px #CD6326 solid;
+    border-right: 0;
+}
+
+.get_submit {
+    box-sizing: border-box;
+    width: 120px;
+    height: 60px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: #F7F7F7;
+    background: #CD6326;
+    
+    border-radius: 0 5px 5px 0;
+    border: none;
+    padding: 17px 0;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.get_submit:hover {
+    background: #E39128;
+}
+
+.get_submit:active {
+    background: #8F5613;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0;
+    height: 360px;
+    margin: 0 auto;
+    background:#181617 top url(../assets/img/Footer.jpg) no-repeat;
+}
+
+.leaves {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer_nav {
+    justify-content: space-between;
+
+}
+
+.nav_link {
+    font-size: 23px;
+    text-decoration: none;
+    color: #f7f7f7;
+    font-family: "Open Sans";
+    font-style: normal;
+    transition: all 0.2s ease;
+}
+
+.nav_link:hover {
+    color:  #E39128;
+}
+/* social tinklas */
+.social_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_link {
+    font-family: "Open Sans", sans-serif;
+    color: #f7f7f7;
+    font-size: 23px;
+    line-height: 60px;
+}
+
+.social_item {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-left: 27px;
+    transition: transform .2s;
+}
+
+.social_item:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.social_item:active {
+    cursor: pointer;
+    transform: scale(0.9);
+    opacity: 0.75;
+}
+
+
+/* Facebook */
+.social_facebook {
+    background: url(../assets/img/svg/facebook.svg) no-repeat;
+}
+
+
+
+/* Instagram */
+.social_instagram {
+    background: url(../assets/img/svg/instagram.svg);
+    
+}
+
+/* Pinterest */
+.social_pinterest {
+    background: url(../assets/img/svg/pinterest.svg);
+}
+
+/* Telegram */
+.social_telegram {
+    background: url(../assets/img/svg/telegram.svg);
+}

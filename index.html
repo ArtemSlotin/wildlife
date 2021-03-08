@@ -9,6 +9,136 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+<!-- header -->
+    <header class="header wrapper">
+        <div class="header_logo">
+            <a href="#" class="header_logo-link">
+                <img src="./assets/img/svg/path0.svg" class="deer_horns" href="#" alt="logo"/>
+                <span class="header_logo-text">wildlife</span>
+            </a>
+        </div>
+<!-- nav menu -->
+        <nav class="header_nav">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#!" class="header_link">Blog</a>
+                </li>
+            
+                <li class="nav_item">
+                    <a href="#!" class="header_link">Contacts</a>
+                </li>
+            
+                <li class="nav_item">
+                    <a href="#!" class="header_link">
+                        <svg class="search_item" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.688 14.688C12.001 14.688 14.688 12 14.688 8.688C14.688 5.376 12 2.688 8.688 2.688C5.376 2.688 2.688 5.376 2.688 8.688C2.688 12 5.376 14.688 8.688 14.688V14.688ZM16.688 14.688L23.313 21.313L21.313 23.313L14.688 16.688V15.625L14.313 15.25C12.813 16.563 10.813 17.313 8.688 17.313C3.875 17.313 0 13.5 0 8.688C0 3.876 3.875 0 8.688 0C13.501 0 17.313 3.875 17.313 8.688C17.313 10.813 16.563 12.813 15.25 14.313L15.625 14.688H16.688Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+            
+                <li class="nav_item">
+                    <a href="#" class="sign_in">Sign in</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Заголовок 1 + стаття + кнопка (фон FOX) -->
+    <section class="fox">
+        <div class="wrapper">
+            <div class="survival_article">
+                <h1>Survival</h1>
+                <p class="article">What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.</p>
+                <form>
+                    <button type="submit" disabled class="donate-btn">Donate</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- Main part  -->
+    <main class="main">
+        <div class="survival">
+            <div class="wrapper">
+                    <h2>Latest articles</h2>
+                    <p class="breaking_news">Breaking news from the wild</p>  
+
+                <!--SLIDER flexbox-->
+                <div class="flexbox-container">
+                    <div class="slider">
+                        <div class="left_arrow">
+                            <img src="./assets/img/svg/arrowLeft.svg" alt="arrow">
+                        </div>
+                        
+                        <div class="cards slide-1">
+                            <div class="card_description-1">
+                                <h4 class="card-title">Deer</h4>
+                                <small class="card-subtitle">
+                                    Naturalist investigation
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="cards slide-2">
+                            <div class="card_description">
+                                <h4 class="card-title">Squirrel</h4>
+                                <small class="card-subtitle">
+                                    Kamikaze squirrels
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="cards slide-3">
+                            <div class="card_description">
+                                <h4 class="card-title">Bird</h4>
+                                <small class="card-subtitle">
+                                    Birds Fight club
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="right_arrow">
+                            <img src="./assets/img/svg/arrowRight.svg" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+                <!--input email, submit and h3-->
+                <h3>Get notified about new amazing articles</h3>
+                <form class="input_email">
+                    <input class="get_email" type="text" placeholder="Email">
+                    <input class="get_submit" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </main>
+
+   <!--footer-->
+   <footer class="footer">
+       <div class="leaves wrapper">
+        <div class="nav_logo">
+            <a href="#" class="header_logo-link">
+                <img src="./assets/img/svg/path0.svg" class="deer_horns" href="#" alt="logo"/>
+                <span class="header_logo-text">wildlife</span>
+            </a>
+        </div>
+
+        <nav class="footer_nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#" class="nav_link">Articles</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">About us</a></li>
+                <li class="nav_item"><a href="#" class="nav_link">Learn more</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer_social">
+            <ul class="social_list">
+                <li class="social_item social_facebook"><a class="social_link" href="#"></a></li>
+                <li class="social_item social_instagram"><a class="social_link" href="#"></a></li>
+                <li class="social_item social_pinterest"><a class="social_link" href="#"></a></li>
+                <li class="social_item social_telegram"><a class="social_link" href="#"></a></li>
+            </ul>
+        </div>
+       </div>
+   </footer>
 </body>
 </html>
