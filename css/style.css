@@ -54,6 +54,21 @@ body{
     background: #02160b;
 }
 
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 100px;
+}
+
 .header_logo{
     display: flex;
     text-align: center;
@@ -62,9 +77,8 @@ body{
     transition: all 1s;
 }
 
-
 .header_logo-text{
-    padding-left: 16px;
+    padding-left: 10px;
     font-family: "Roboto", sans-serif;
     font-size: 32px;
     line-height: 60px;
@@ -88,6 +102,7 @@ body{
     color: #CD6326;
 }
 
+/* Logo */
 .deer_horns {
     transition: 1s ease;
 }
@@ -102,47 +117,23 @@ body{
 }
 
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    margin: 20px auto;
-    height: 100px;
-}
 
-.wrapper{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-
+/* Header menu */
 .header_nav{
     display: flex;
     justify-content: space-between;
 }
+
 .nav_list{
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
 }
-   
-
-
-.header_wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
 
 .nav_item{
     padding-left: 62px;
 }
-
 
 .header_link{
     font-family: "Open Sans";
@@ -150,7 +141,14 @@ body{
     font-size: 23px;
     text-decoration: none;
     color: #f7f7f7;
+    
+}
 
+.header_link:hover, .header_link:active{
+    color: #CD6326;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
 }
 
 .search_item {
@@ -188,15 +186,6 @@ body{
     border:2px solid #8F5613;
 }
 
-
-.header_link:hover, .header_link:active{
-    color: #CD6326;
-    cursor: pointer;
-    box-sizing: border-box;
-    outline: none;
-}  
-
-
 .sign_in{
     font-family: "Roboto", sans-serif;
     font-size: 23px;
@@ -215,6 +204,7 @@ body{
 }
 
 
+/* Block of header and survival */
 .fox {
     height: 780px;
     background: #02160b top url(../assets/img/fox.png) no-repeat;
@@ -247,15 +237,15 @@ h2{
 
 .article{
     padding: 50px 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans";
     font-size: 18px;
-    line-height: 27px;
+    line-height: 28px;
     font-weight: 400;
     width: 274px;
 }
 
+/* btn DONATE */
 .donate-btn{
-    /* margin-top: 50px; */
     width: 160px;
     height: 60px;
     margin-bottom: 240px;
@@ -279,8 +269,9 @@ h2{
 .donate-btn:active{
     background-color: #8F5613;
 }
-/* second part - latest article */
 
+
+/* second part - LATEST ARTICLE */
 
 .breaking_news{
     font-family: "Open Sans";
@@ -292,7 +283,6 @@ h2{
     margin-top: 20px;
     color: #666666;
 }
-
 
 /* main grey color */
 
@@ -306,11 +296,13 @@ h2{
     align-content: center;
 }
 
+
+/* Slider with cards */
 .slider {
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    margin-top: 120px;
+    margin-top: 115px;
 }
 
 .left_arrow {
@@ -335,11 +327,11 @@ h2{
     transform: scale(1.4);
 }
 
-
+/* CARDS */
 .cards {
     width: 300px;
     height: 360px;
-    margin: 10px;
+    margin: 10px 12px;
     position: relative;
 }
 .card_description-1 {
@@ -357,14 +349,14 @@ h2{
     top: 240px;
     left: 80px;
 }
-
+/* CARD description */
 h4 {
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
     line-height: 36px;
     font-weight: 400;
     color: #f7f7f7;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .card-subtitle {
@@ -374,7 +366,7 @@ h4 {
     font-weight: 400;
 }
 
-
+/* BG images slides */
 .slide-1 {
     background: url(../assets/img/deer.jpg);
 }
@@ -402,7 +394,12 @@ h3 {
     text-align: center;
     color: #333333;
 
-    margin-top: 240px;
+    margin-top: 230px;
+}
+
+/* GET NOTIFIED - Для отправки данных */
+.get_notified {
+    background-color: #cccccc;
 }
 
 .input_email {
@@ -419,7 +416,7 @@ h3 {
     box-sizing: border-box;
     outline: none;
     width: 540px;
-    height: 60px;
+    height: 59px;
     padding: 0 15px;
     border: 1px #666666 solid;
     background: #cccccc;
@@ -481,8 +478,15 @@ h3 {
 }
 
 .footer_nav {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    margin-left: 60px;
+}
 
+.footer_nav_li {
+    padding-right: 85px;
 }
 
 .nav_link {
@@ -497,6 +501,7 @@ h3 {
 .nav_link:hover {
     color:  #E39128;
 }
+
 /* social tinklas */
 .social_list {
     display: flex;
